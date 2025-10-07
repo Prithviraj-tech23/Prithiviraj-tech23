@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prithivi Raj | Developer & Designer Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's gray-50 */
+            background-image: radial-gradient(circle at 1px 1px, #d1d5db 0.5px, transparent 0); /* Subtle dot pattern */
+            background-size: 20px 20px;
+        }
+        /* Style for section headers */
+        .section-header {
+            @apply text-3xl font-bold text-gray-800 mb-2;
+        }
+        .section-subheader {
+            @apply text-lg text-gray-500 mb-8;
+        }
+        /* Custom scrollbar for modal content */
+        .modal-content-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .modal-content-scroll::-webkit-scrollbar-thumb {
+            background-color: #d1d5db; /* gray-300 */
+            border-radius: 4px;
+        }
+        .modal-content-scroll::-webkit-scrollbar-track {
+            background-color: #f3f4f6; /* gray-100 */
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Prithivi Raj</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#projects" class="text-gray-600 hover:text-blue-500 transition duration-300">Projects</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-500 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-500">Projects</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-500">About</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-500">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="py-20 md:py-32 bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Replace with your professional photo URL -->
+                    <img src="https://placehold.co/128x128/60A5FA/FFFFFF?text=PR" alt="Prithivi Raj" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                        Prithivi Raj
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                        Developer & Designer specializing in Chatbots, IoT, and User Experience.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#projects" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transition duration-300">
+                            View My Projects
+                        </a>
+                        <a href="#contact" class="bg-gray-200 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-300 transition duration-300">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="section-header">My Portfolio</h2>
+                    <p class="section-subheader">A selection of my recent work and case studies.</p>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Project 1: Smart Dustbin -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <!-- Replace with your project image -->
+                        <img src="https://placehold.co/600x400/34D399/FFFFFF?text=Smart+Dustbin" alt="Smart Dustbin Project" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">IoT-Enabled Smart Dustbin</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">An innovative solution to automate waste management using sensors for waste segmentation and an auto-lid mechanism.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">IoT</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Hardware</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Project Files</span>
+                            </div>
+                            <button onclick="openModal('modal-dustbin')" class="w-full mt-auto bg-gray-50 text-gray-700 font-semibold py-2 rounded-lg hover:bg-gray-100 transition duration-300">View Case Study</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Job Search UI/UX -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <!-- Replace with your project image -->
+                        <img src="https://placehold.co/600x400/8B5CF6/FFFFFF?text=Job+Search+UI" alt="Job Search Platform UI/UX" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Job Search Platform UI/UX</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">A comprehensive UI/UX design for a job searching and recruitment platform focused on a seamless user journey.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-purple-100 text-purple-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">UI/UX Design</span>
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Figma</span>
+                                 <span class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Case Study</span>
+                            </div>
+                             <button onclick="openModal('modal-jobui')" class="w-full mt-auto bg-gray-50 text-gray-700 font-semibold py-2 rounded-lg hover:bg-gray-100 transition duration-300">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Job & Skill Chatbot -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <!-- Replace with your project image -->
+                        <img src="https://placehold.co/600x400/60A5FA/FFFFFF?text=Live+Chatbot" alt="Chatbot Project" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Job & Skill Advertising Chatbot</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">An intelligent chatbot to connect professionals with opportunities. Click below to try it live!</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Chatbot Dev</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Live Demo</span>
+                                <span class="inline-block bg-red-100 text-red-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">MS Copilot</span>
+                            </div>
+                            <button onclick="openModal('modal-chatbot')" class="w-full mt-auto bg-blue-50 text-blue-700 font-semibold py-2 rounded-lg hover:bg-blue-100 transition duration-300">View & Interact</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: RFID Attendance System -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                         <!-- Replace with your project image -->
+                        <img src="https://placehold.co/600x400/FBBF24/FFFFFF?text=RFID+System" alt="RFID Attendance System" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">RFID Attendance System</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">An automated system designed to streamline attendance tracking using an RFID kit, ensuring accuracy and efficiency.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">IoT</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Video Demo</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Hardware</span>
+                            </div>
+                             <button onclick="openModal('modal-rfid')" class="w-full mt-auto bg-gray-50 text-gray-700 font-semibold py-2 rounded-lg hover:bg-gray-100 transition duration-300">View Case Study</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5: Health Website UI/UX -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <!-- Replace with your project image -->
+                        <img src="https://placehold.co/600x400/F472B6/FFFFFF?text=Health+UI/UX" alt="Health Website UI/UX" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Health Website UI/UX Design</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">A complete user interface design for a health-focused website, prioritizing accessibility and a clean, user-friendly experience.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-pink-100 text-pink-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">UI/UX Design</span>
+                                <span class="inline-block bg-purple-100 text-purple-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Figma</span>
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Wireframing</span>
+                            </div>
+                             <button onclick="openModal('modal-uiux')" class="w-full mt-auto bg-gray-50 text-gray-700 font-semibold py-2 rounded-lg hover:bg-gray-100 transition duration-300">View Case Study</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="lg:flex lg:items-center">
+                    <div class="lg:w-1/2">
+                        <h2 class="section-header">About Me</h2>
+                        <p class="text-gray-600 mb-6 text-lg">
+                            I am a versatile and innovative developer with demonstrated skills in Chatbot Development, UI/UX Design, the Internet of Things (IoT), and Web Development. I'm passionate about creating practical, user-friendly solutions that solve real-world problems and I enjoy bringing ideas to life through code and design.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-16 mt-10 lg:mt-0">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">My Core Skills</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag">Chatbot Development</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Internet of Things (IoT)</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Hardware Prototyping</span>
+                            <span class="skill-tag">Figma & Adobe XD</span>
+                            <span class="skill-tag">RFID Technology</span>
+                            <span class="skill-tag">Arduino</span>
+                             <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+             <style>.skill-tag { @apply bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-lg; }</style>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="section-header">Get In Touch</h2>
+                 <p class="section-subheader">I'm currently available for freelance work and new opportunities. Let's build something great together.</p>
+                 <a href="mailto:your.email@example.com" class="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xl font-semibold py-4 px-10 rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transition duration-300">
+                    Say Hello
+                 </a>
+                 <div class="flex justify-center space-x-6 mt-8">
+                     <!-- Replace with your actual URLs -->
+                     <a href="#" target="_blank" class="text-gray-500 hover:text-blue-600">
+                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.013c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.013C22 6.477 17.523 2 12 2z" clip-rule="evenodd" /></svg>
+                     </a>
+                     <a href="#" target="_blank" class="text-gray-500 hover:text-blue-600">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                     </a>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+             &copy; 2024 Prithivi Raj. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Modals for Case Studies -->
+    <!-- Smart Dustbin Modal -->
+    <div id="modal-dustbin" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full p-8 relative">
+            <button onclick="closeModal('modal-dustbin')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-3xl font-bold mb-4">IoT-Enabled Smart Dustbin</h3>
+            <div class="text-gray-600 space-y-4">
+                <p><strong>The Problem:</strong> Public waste bins often overflow, creating unhygienic conditions and inefficient manual waste sorting.</p>
+                <p><strong>My Solution:</strong> I designed and built a prototype of a smart dustbin that uses sensors to automate and improve waste management. The goal was to create a cleaner, more efficient system.</p>
+                <h4 class="font-semibold text-lg pt-2">Key Features:</h4>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Automatic Waste Segmentation:</strong> Utilizes sensors to identify and sort different types of waste into separate compartments.</li>
+                    <li><strong>Auto-Lid Function:</strong> Detects when the bin is full and automatically closes the lid to prevent overflow and maintain hygiene.</li>
+                    <li><strong>User-Friendly Override:</strong> Equipped with a simple push-button for users to open the lid manually when needed.</li>
+                </ul>
+                <h4 class="font-semibold text-lg pt-2">Technologies Used:</h4>
+                <p>Arduino, C++, Ultrasonic Sensors, Servo Motors, Custom Hardware Assembly.</p>
+                <div class="mt-6 text-center">
+                     <a href="https://drive.google.com/drive/folders/1H0pyXQEk7wFMBPh4x623bAXqQvTuzdaR?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                        View Project Files
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Job UI Modal -->
+    <div id="modal-jobui" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full p-8 relative">
+            <button onclick="closeModal('modal-jobui')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-3xl font-bold mb-4">Job Search Platform UI/UX</h3>
+            <div class="text-gray-600 space-y-4">
+                <p><strong>The Goal:</strong> To design a modern, intuitive, and user-friendly interface for a platform connecting job seekers with employers, ensuring a smooth experience for both sides of the recruitment process.</p>
+                <p><strong>My Process:</strong> The project involved researching existing job platforms to identify pain points, followed by creating user flows, wireframes, and finally high-fidelity mockups that address these issues.</p>
+                <h4 class="font-semibold text-lg pt-2">Key Design Features:</h4>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Intuitive Job Search Filters:</strong> Advanced yet simple-to-use filters to help candidates find relevant job postings quickly.</li>
+                    <li><strong>Seamless Application Process:</strong> A streamlined, multi-step application form to reduce user drop-off.</li>
+                    <li><strong>Employer Dashboard:</strong> A comprehensive dashboard for recruiters to post jobs and manage candidates efficiently.</li>
+                </ul>
+                <h4 class="font-semibold text-lg pt-2">Tools Used:</h4>
+                <p>Figma, User Research, Wireframing, Prototyping.</p>
+                 <div class="mt-6 text-center">
+                     <a href="https://docs.google.com/document/d/15HmgzBSVZI427XrOsfvOT8XqBv_OcFKQ/edit?usp=sharing&ouid=102986422188653819220&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                        View Full Case Study
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Health UI/UX Modal -->
+    <div id="modal-uiux" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full p-8 relative">
+            <button onclick="closeModal('modal-uiux')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-3xl font-bold mb-4">Health Website UI/UX Design</h3>
+            <div class="text-gray-600 space-y-4">
+                <p><strong>The Goal:</strong> To design a clean, intuitive, and accessible user interface for a health-focused website. The design needed to be trustworthy and easy for users of all ages and technical abilities to navigate.</p>
+                <p><strong>My Process:</strong> I started with user research and created personas to understand the target audience. From there, I developed wireframes to map out the user flow and information architecture. Finally, I created high-fidelity mockups and a clickable prototype.</p>
+                <h4 class="font-semibold text-lg pt-2">Key Features of the Design:</h4>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Clean & Minimalist Layout:</strong> Focused on readability and reducing clutter to make information easy to find.</li>
+                    <li><strong>Accessible Color Palette:</strong> Used a color scheme with high contrast ratios to ensure readability for visually impaired users.</li>
+                    <li><strong>Intuitive Navigation:</strong> Designed a simple and clear navigation structure to help users find doctors, articles, and services quickly.</li>
+                </ul>
+                <h4 class="font-semibold text-lg pt-2">Tools Used:</h4>
+                <p>Figma, Wireframing, Prototyping, User Persona Development.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Modal -->
+    <div id="modal-chatbot" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+         <div class="bg-white rounded-lg shadow-2xl max-w-5xl w-full h-full max-h-[85vh] p-6 md:p-8 relative flex flex-col">
+            <button onclick="closeModal('modal-chatbot')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-10 text-3xl font-bold">&times;</button>
+            <h3 class="text-3xl font-bold mb-4 flex-shrink-0">Job & Skill Advertising Chatbot</h3>
+            <div class="flex-grow flex flex-col md:flex-row gap-8 overflow-hidden">
+                <!-- Left Column: Description -->
+                <div class="md:w-1/2 text-gray-600 space-y-4 overflow-y-auto pr-4 modal-content-scroll">
+                    <p><strong>The Problem:</strong> Job seekers and employers often struggle to connect on traditional platforms. I wanted to create a more interactive and direct way to bridge this gap.</p>
+                    <p><strong>My Solution:</strong> I developed this specialized chatbot that acts as a dynamic platform for advertising jobs and skills. It allows users to post their needs or qualifications and get matched in real-time through a conversational interface. <strong>Try it out!</strong></p>
+                    <h4 class="font-semibold text-lg pt-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Interactive Job Posting:</strong> Companies can post job openings by simply talking to the bot.</li>
+                        <li><strong>Skill Advertising:</strong> Professionals can list their skills and availability for freelance or full-time work.</li>
+                        <li><strong>Text-to-Speech Enabled:</strong> The bot can vocalize its responses for a more engaging and accessible experience.</li>
+                    </ul>
+                    <h4 class="font-semibold text-lg pt-2">Technologies Used:</h4>
+                    <p>Microsoft Copilot Studio, Natural Language Processing (NLP), Python, Text-to-Speech APIs.</p>
+                </div>
+                <!-- Right Column: Chatbot Iframe -->
+                <div class="md:w-1/2 h-full flex flex-col flex-grow min-h-[400px]">
+                    <p class="font-semibold text-gray-700 mb-2 md:hidden">Try the Chatbot:</p>
+                    <div class="flex-grow border rounded-lg overflow-hidden shadow-inner bg-gray-50">
+                        <iframe src="https://copilotstudio.microsoft.com/environments/Default-6b8b8296-bdff-4ad8-93ad-84bcbf3842f5/bots/cr88c_agentL-UhBO/webchat?__version__=2" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RFID Modal -->
+    <div id="modal-rfid" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full p-8 relative">
+            <button onclick="closeModal('modal-rfid')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-3xl font-bold mb-4">RFID Attendance System</h3>
+            <div class="text-gray-600 space-y-4">
+                <p><strong>The Problem:</strong> Manual attendance tracking is time-consuming, prone to errors, and inefficient for large groups.</p>
+                <p><strong>My Solution:</strong> I designed and implemented an automated attendance checker using an RFID kit. Each user is given an RFID card, and they simply tap it on a reader to have their attendance recorded instantly.</p>
+                <h4 class="font-semibold text-lg pt-2">Key Features:</h4>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Instant & Accurate Tracking:</strong> Records attendance in real-time with no manual entry required.</li>
+                    <li><strong>Simple User Interaction:</strong> Users just need to tap their card, making the process quick and seamless.</li>
+                    <li><strong>Data Logging:</strong> The system logs attendance data with timestamps for easy management and reporting.</li>
+                </ul>
+                <h4 class="font-semibold text-lg pt-2">Technologies Used:</h4>
+                <p>Arduino, RFID-RC522 Sensor, C++, Data Logging to SD Card/Serial Monitor.</p>
+                <div class="mt-6 text-center">
+                     <a href="https://drive.google.com/drive/folders/10yYkm-zGa1FXyO8JNPvvRLMJiCf3Pf_L" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                        Watch Project Video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Modal Handling
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal on clicking outside of it
+        window.addEventListener('click', function(event) {
+            const modals = document.querySelectorAll('.fixed.inset-0');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    closeModal(modal.id);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
